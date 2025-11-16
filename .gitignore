@@ -1,0 +1,66 @@
+# ===== BACKEND =====
+# Виртуальное окружение Python
+backend/venv/
+backend/.venv/
+backend/env/
+
+# Кэш Python
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+# Файлы окружения
+#NOTE - Удалить при реальных проектах
+backend/.env
+backend/.env.local
+
+# Логи
+backend/*.log
+backend/logs/
+
+# ===== FRONTEND =====
+# Node modules
+frontend/node_modules/
+frontend/.npm
+frontend/.yarn
+
+# Сборка
+frontend/dist/
+frontend/build/
+frontend/.next/
+
+# Кэш
+frontend/.nuxt/
+frontend/.cache/
+frontend/.parcel-cache/
+
+# Файлы окружения
+#NOTE - Удалить при реальных проектах
+frontend/.env
+frontend/.env.local
+frontend/.env*.local
+
+# Логи
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ===== ОБЩЕЕ =====
+# Системные файлы
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Временные файлы
+*.temp
+*.tmp
