@@ -1,9 +1,0 @@
-fastapi[all]
-uvicorn[standard]
-python-dotenv
-pydantic
-pydantic-settings
-black
-flake8
-isort
-pre-commit
