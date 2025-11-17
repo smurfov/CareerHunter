@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     # Добавляем настройки сервера
     HOST: str = "localhost"
-    PORT: int = 8000
+    PORT: int = 3333
     RELOAD: bool = True
 
     class Config:

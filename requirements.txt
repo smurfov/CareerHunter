@@ -1,0 +1,16 @@
+# Backend
+fastapi[all]
+uvicorn[standard]
+sqlalchemy 
+
+# Telegram Bot
+aiogram
+
+# Common
+python-dotenv
+black
+flake8
+isort
+pre-commit
+pydantic
+pydantic-settings

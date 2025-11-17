@@ -1,5 +1,6 @@
+import os
 import uvicorn
-from app.api.endpoints import resumes, users
+from app.api import resumes, users,telegram
 from app.core.config import settings
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,8 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title=settings.PROJECT_NAME, debug=settings.DEBUG)
 
 # Импортируем API endpoints
-app.include_router(users.router, prefix="/api/v1")
-app.include_router(resumes.router, prefix="/api/v1")
+app.include_router(users.router, prefix=settings.API_V1_STR)
+app.include_router(resumes.router, prefix=settings.API_V1_STR)
+app.include_router(telegram.router, prefix=settings.API_V1_STR)
 
 # CORS для React фронтенда
 app.add_middleware(

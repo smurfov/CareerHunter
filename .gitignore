@@ -4,14 +4,6 @@ backend/venv/
 backend/.venv/
 backend/env/
 
-# Кэш Python
-backend/__pycache__/
-backend/*/__pycache__/
-backend/*/*/__pycache__/
-backend/*.pyc
-backend/*.pyo
-backend/*.pyd
-
 # Файлы окружения
 #NOTE - Удалить при реальных проектах
 backend/.env
@@ -48,7 +40,42 @@ frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
+# ===== ТЕЛЕГРАМ БОТ =====
+# Виртуальное окружение Python
+telegram-bot/venv/
+telegram-bot/.venv/
+telegram-bot/env/
+
+# Кэш Python
+telegram-bot/__pycache__/
+telegram-bot/*/__pycache__/
+telegram-bot/*/*/__pycache__/
+telegram-bot/*.pyc
+telegram-bot/*.pyo
+telegram-bot/*.pyd
+
+# Файлы окружения
+#NOTE - Удалить при реальных проектах
+telegram-bot/.env
+telegram-bot/.env.local
+
+# Логи
+telegram-bot/*.log
+telegram-bot/logs/
+
 # ===== ОБЩЕЕ =====
+# Виртуальное окружение
+venv
+
+# Кеш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# БД
+*.db
+
 # Системные файлы
 .DS_Store
 Thumbs.db
