@@ -1,26 +1,23 @@
 from aiogram.types import (
-    ReplyKeyboardMarkup, 
-    KeyboardButton,
+    InlineKeyboardButton,
     InlineKeyboardMarkup,
-    InlineKeyboardButton
+    KeyboardButton,
+    ReplyKeyboardMarkup,
 )
 
 
 def get_main_keyboard():
-	return ReplyKeyboardMarkup(
-		keyboard=[
-			[KeyboardButton(text="Создать резюме")],
-			[KeyboardButton(text="Мои резюме")],
-			[KeyboardButton(text="Тарифы")],
-			[KeyboardButton(text="Профиль")],
-			[KeyboardButton(text="Помощь")],
-		],
-		resize_keyboard=True
-	)
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="Создать резюме")],
+            [KeyboardButton(text="Мои резюме")],
+            [KeyboardButton(text="Тарифы")],
+            [KeyboardButton(text="Профиль")],
+            [KeyboardButton(text="Помощь")],
+        ],
+        resize_keyboard=True,
+    )
+
 
 def get_cancel_keyboard():
-	return InlineKeyboardMarkup(
-		inline_keyboard=[
-			InlineKeyboardButton(text="Отмена")
-		]
-	)
+    return InlineKeyboardMarkup(inline_keyboard=[InlineKeyboardButton(text="Отмена")])

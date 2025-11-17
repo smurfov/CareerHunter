@@ -1,6 +1,5 @@
-import os
 import uvicorn
-from app.api import resumes, users,telegram
+from app.api import resumes, telegram, users
 from app.core.config import settings
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware

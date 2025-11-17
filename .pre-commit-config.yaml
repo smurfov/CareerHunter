@@ -1,7 +1,7 @@
 repos:
   # Базовые хуки для всех файлов
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -11,23 +11,23 @@ repos:
 
   # Python форматирование
   - repo: https://github.com/psf/black
-    rev: 23.9.1
+    rev: 25.11.0
     hooks:
       - id: black
-        files: ^backend/
+        files: ^(backend|telegram-bot)/
 
   # Сортировка импортов
   - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: 7.0.0
     hooks:
       - id: isort
-        files: ^backend/
+        files: ^(backend|telegram-bot)/
         args: ['--profile', 'black']
 
   # Линтинг Python
   - repo: https://github.com/pycqa/flake8
-    rev: 6.1.0
+    rev: 7.3.0
     hooks:
       - id: flake8
-        files: ^backend/
+        files: ^(backend|telegram-bot)/
         args: ['--max-line-length=88', '--extend-ignore=E203,W503']
